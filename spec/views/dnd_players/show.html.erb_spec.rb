@@ -7,7 +7,7 @@ RSpec.describe "dnd_players/show", type: :view do
       :age => 2,
       :race => 3,
       :gender => 4,
-      :dnd_class => 5,
+      :experience => 5,
       :description => "MyText",
       :weight => "9.99",
       :height => "9.99"

@@ -69,6 +69,6 @@ class DndPlayersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dnd_player_params
-      params.require(:dnd_player).permit(:name, :age, :race, :gender, :dnd_class, :description, :weight, :height)
+      params.require(:dnd_player).permit(:name, :age, :race, :gender, :experience, :description, :weight, :height)
     end
 end

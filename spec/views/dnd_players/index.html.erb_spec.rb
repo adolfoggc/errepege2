@@ -8,20 +8,20 @@ RSpec.describe "dnd_players/index", type: :view do
         :age => 2,
         :race => 3,
         :gender => 4,
-        :dnd_class => 5,
+        :experience => 5,
         :description => "MyText",
         :weight => "9.99",
-        :height => "9.99"
+        :height => "8.99"
       ),
       DndPlayer.create!(
         :name => "Name",
         :age => 2,
         :race => 3,
         :gender => 4,
-        :dnd_class => 5,
+        :experience => 5,
         :description => "MyText",
         :weight => "9.99",
-        :height => "9.99"
+        :height => "8.99"
       )
     ])
   end
@@ -35,6 +35,6 @@ RSpec.describe "dnd_players/index", type: :view do
     assert_select "tr>td", :text => 5.to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
     assert_select "tr>td", :text => "9.99".to_s, :count => 2
-    assert_select "tr>td", :text => "9.99".to_s, :count => 2
+    assert_select "tr>td", :text => "8.99".to_s, :count => 2
   end
 end

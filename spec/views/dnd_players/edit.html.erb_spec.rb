@@ -7,7 +7,7 @@ RSpec.describe "dnd_players/edit", type: :view do
       :age => 1,
       :race => 1,
       :gender => 1,
-      :dnd_class => 1,
+      :experience => 1,
       :description => "MyText",
       :weight => "9.99",
       :height => "9.99"
@@ -27,7 +27,7 @@ RSpec.describe "dnd_players/edit", type: :view do
 
       assert_select "input[name=?]", "dnd_player[gender]"
 
-      assert_select "input[name=?]", "dnd_player[dnd_class]"
+      assert_select "input[name=?]", "dnd_player[experience]"
 
       assert_select "textarea[name=?]", "dnd_player[description]"
 
