@@ -1,0 +1,2 @@
+class DndPlayer < ApplicationRecord
+end

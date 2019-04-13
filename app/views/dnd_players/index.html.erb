@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dnd Players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Race</th>
+      <th>Gender</th>
+      <th>Dnd class</th>
+      <th>Description</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dnd_players.each do |dnd_player| %>
+      <tr>
+        <td><%= dnd_player.name %></td>
+        <td><%= dnd_player.age %></td>
+        <td><%= dnd_player.race %></td>
+        <td><%= dnd_player.gender %></td>
+        <td><%= dnd_player.dnd_class %></td>
+        <td><%= dnd_player.description %></td>
+        <td><%= dnd_player.weight %></td>
+        <td><%= dnd_player.height %></td>
+        <td><%= link_to 'Show', dnd_player %></td>
+        <td><%= link_to 'Edit', edit_dnd_player_path(dnd_player) %></td>
+        <td><%= link_to 'Destroy', dnd_player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dnd Player', new_dnd_player_path %>

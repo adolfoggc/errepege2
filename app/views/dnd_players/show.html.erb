@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dnd_player.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @dnd_player.age %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @dnd_player.race %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @dnd_player.gender %>
+</p>
+
+<p>
+  <strong>Dnd class:</strong>
+  <%= @dnd_player.dnd_class %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dnd_player.description %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @dnd_player.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @dnd_player.height %>
+</p>
+
+<%= link_to 'Edit', edit_dnd_player_path(@dnd_player) %> |
+<%= link_to 'Back', dnd_players_path %>
